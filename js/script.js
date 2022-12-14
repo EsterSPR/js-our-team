@@ -1,32 +1,37 @@
-const members = [
+const team = [
     {
-        Name: 'Wayne Barnett',
-        Role: 'Founder & CEO',
-        Image: 'wayne-barnett-founder-ceo.jpg'
+        name: 'Wayne Barnett',
+        role: 'Founder & CEO',
+        image: 'wayne-barnett-founder-ceo.jpg',
     },
     {
-        Name: 'Angela Caroll',
-        Role: 'Chief Editor',
-        Image: 'angela-caroll-chief-editor.jpg'
+        name: 'Angela Caroll',
+        role: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg',
     },
     {
-        Name: 'Walter Gordon',
-        Role: 'Office Manager',
-        Image: 'walter-gordon-office-manager.jpg'
+        name: 'Walter Gordon',
+        role: 'Office Manager',
+        image: 'walter-gordon-office-manager.jpg',
     },
     {
-        Name: 'Angela Lopez',
-        Role: 'Social Media Manager',
-        Image: 'angela-lopez-social-media-manager.jpg'
+        name: 'Angela Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg',
     },
     {
-        Name: 'Scott Estrada',
-        Role: 'Developer',
-        Image: 'scott-estrada-developer.jpg'
+        name: 'Scott Estrada',
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg',
     },
     {
-        Name: 'Barbara Ramos',
-        Role: 'Graphic Designer',
-        Image: 'barbara-ramos-graphic-designer.jpg'
-    }
+        name: 'Barbara Ramos',
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg',
+    },
 ]
+
+for(let i=0; i<team.length; i++){
+    let member = team[i];
+    console.log(`${member.name} - ${member.role} - ${member.image}`);
+}
