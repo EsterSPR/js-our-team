@@ -35,3 +35,10 @@ for(let i=0; i<team.length; i++){
     let member = team[i];
     console.log(`${member.name} - ${member.role} - ${member.image}`);
 }
+
+const unordered = document.querySelector('.unordered-list');
+for(let i=0; i<team.length; i++){
+    let member = team[i];
+    let list_item = `<li>${member.name} - ${member.role} - ${member.image}</li>`;
+    unordered.innerHTML += list_item;
+}
